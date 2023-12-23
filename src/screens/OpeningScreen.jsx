@@ -42,10 +42,12 @@ const OpeningScreen = ({ navigation }) => {
             inputMode="text"
           />
           <TouchableHighlight
-            style={styles.btn}
             onPress={() => navigation.navigate("Tabs")}
+            style={styles.touchable}
           >
-            <Text>Next</Text>
+            <View style={styles.btn}>
+              <Text>Next</Text>
+            </View>
           </TouchableHighlight>
         </View>
       </ScrollView>
@@ -97,11 +99,14 @@ const styles = StyleSheet.create({
     maxHeight: 60,
     borderRadius: 10,
   },
+  touchable: {
+    backgroundColor: "#fafafa",
+    borderRadius: 25,
+  },
   btn: {
     alignItems: "center",
-    backgroundColor: "#e9ebfd",
+    backgroundColor: "#fafafa",
     width: 100,
-    marginVertical: 5,
     padding: 10,
     borderRadius: 25,
   },

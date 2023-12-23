@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
-const HomeScreen = () => {
+const ActivityScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>HOME </Text>
+      <Text style={styles.title}>ACTIVITY </Text>
     </SafeAreaView>
   );
 };
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default ActivityScreen;

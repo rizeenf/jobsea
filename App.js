@@ -10,12 +10,12 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Jobsea">
         <Stack.Screen
           name="Opening"
           component={OpeningScreen}
           options={{
-            title: "Jobsea",
+            title: "Login",
             headerTitle: false,
             headerTransparent: true,
             headerTitleStyle: {
@@ -28,6 +28,7 @@ export default function App() {
           component={BottomTab}
           options={{
             headerTransparent: true,
+            title: "Jobsea",
           }}
         />
       </Stack.Navigator>
